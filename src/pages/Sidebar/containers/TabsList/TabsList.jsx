@@ -163,7 +163,7 @@ const TabsList = ({
   };
 
   const pinnedTabs = tabOrdersCopy.filter((item) => item.pinned);
-  const unpinnedTabs = tabOrdersCopy.filter((item) => !item.pinned);
+  const unpinnedTabs = tabOrdersCopy.filter((item) => !item.pinned).reverse();
 
   return (
     <DarkModeContext.Consumer>
